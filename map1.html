@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_bf6d0603e62741b40ffdab7e80facd81 {
+                #map_3fe0772c9e7d121ead4fabff7fd2afb5 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_bf6d0603e62741b40ffdab7e80facd81" ></div>
+            <div class="folium-map" id="map_3fe0772c9e7d121ead4fabff7fd2afb5" ></div>
         
 </body>
 <script>
     
     
-            var map_bf6d0603e62741b40ffdab7e80facd81 = L.map(
-                "map_bf6d0603e62741b40ffdab7e80facd81",
+            var map_3fe0772c9e7d121ead4fabff7fd2afb5 = L.map(
+                "map_3fe0772c9e7d121ead4fabff7fd2afb5",
                 {
                     center: [37.55043934921041, 126.99701154232895],
                     crs: L.CRS.EPSG3857,
@@ -69,7 +69,6 @@
   "zoom": 12,
   "zoomControl": true,
   "preferCanvas": false,
-  "TileLayer": "Mapbox Bright",
 }
 
                 }
@@ -79,15 +78,15 @@
 
         
     
-            var tile_layer_af042b79ca480da5df223d94d034c1bf = L.tileLayer(
-                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+            var tile_layer_3713efdf2cb59aa79c47a1456979d03c = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
-  "maxZoom": 19,
-  "maxNativeZoom": 19,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
   "noWrap": false,
-  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
-  "subdomains": "abc",
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
   "detectRetina": false,
   "tms": false,
   "opacity": 1,
@@ -96,23 +95,23 @@
             );
         
     
-            tile_layer_af042b79ca480da5df223d94d034c1bf.addTo(map_bf6d0603e62741b40ffdab7e80facd81);
+            tile_layer_3713efdf2cb59aa79c47a1456979d03c.addTo(map_3fe0772c9e7d121ead4fabff7fd2afb5);
         
     
-            var feature_group_080f49cf8343c6114bb839c52ff5742b = L.featureGroup(
+            var feature_group_a252b40c3cba08a502d9a095ca2320cc = L.featureGroup(
                 {
 }
             );
         
     
-            var marker_ad9ad62c538d34d5d0efe3dfe2ceeded = L.marker(
+            var marker_3f75bb634a9bde0165abb973467ffa5a = L.marker(
                 [37.5, 126.9],
                 {
 }
-            ).addTo(feature_group_080f49cf8343c6114bb839c52ff5742b);
+            ).addTo(feature_group_a252b40c3cba08a502d9a095ca2320cc);
         
     
-            var icon_35036f3ff1363f1bbd118f726797e5a8 = L.AwesomeMarkers.icon(
+            var icon_568631364445908345683656338ed7ac = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -123,34 +122,34 @@
             );
         
     
-        var popup_89378efc3d08d0bd5d99cb42c6025728 = L.popup({
+        var popup_521ece80c6fba36b2025766204a9f418 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_64cdacbb1f12164a24c303bd1f105717 = $(`<div id="html_64cdacbb1f12164a24c303bd1f105717" style="width: 100.0%; height: 100.0%;">This is SEOUL</div>`)[0];
-                popup_89378efc3d08d0bd5d99cb42c6025728.setContent(html_64cdacbb1f12164a24c303bd1f105717);
+                var html_927ef7c7990d636f333a5959cddd5ec7 = $(`<div id="html_927ef7c7990d636f333a5959cddd5ec7" style="width: 100.0%; height: 100.0%;">This is SEOUL</div>`)[0];
+                popup_521ece80c6fba36b2025766204a9f418.setContent(html_927ef7c7990d636f333a5959cddd5ec7);
             
         
 
-        marker_ad9ad62c538d34d5d0efe3dfe2ceeded.bindPopup(popup_89378efc3d08d0bd5d99cb42c6025728)
+        marker_3f75bb634a9bde0165abb973467ffa5a.bindPopup(popup_521ece80c6fba36b2025766204a9f418)
         ;
 
         
     
     
-                marker_ad9ad62c538d34d5d0efe3dfe2ceeded.setIcon(icon_35036f3ff1363f1bbd118f726797e5a8);
+                marker_3f75bb634a9bde0165abb973467ffa5a.setIcon(icon_568631364445908345683656338ed7ac);
             
     
-            var marker_d89e427753078f7d61df12453900c1d2 = L.marker(
+            var marker_60a16e85e0ee1887bce7ced5ba6de0af = L.marker(
                 [37.6, 126.8],
                 {
 }
-            ).addTo(feature_group_080f49cf8343c6114bb839c52ff5742b);
+            ).addTo(feature_group_a252b40c3cba08a502d9a095ca2320cc);
         
     
-            var icon_ebf8724287b314e4c1983dc84fe7b2e4 = L.AwesomeMarkers.icon(
+            var icon_fe72b7603f9673e28bd49e483915d9c9 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -161,27 +160,27 @@
             );
         
     
-        var popup_d10c27bce323404fb0e7e32e55985926 = L.popup({
+        var popup_741c3425595ab9aceed53c1e39e1bf2d = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_1c749ab95d2ffaefb2c92f6ed337b2c3 = $(`<div id="html_1c749ab95d2ffaefb2c92f6ed337b2c3" style="width: 100.0%; height: 100.0%;">This is SEOUL</div>`)[0];
-                popup_d10c27bce323404fb0e7e32e55985926.setContent(html_1c749ab95d2ffaefb2c92f6ed337b2c3);
+                var html_dc6c0378c6515a45dc030dac7cdc8edf = $(`<div id="html_dc6c0378c6515a45dc030dac7cdc8edf" style="width: 100.0%; height: 100.0%;">This is SEOUL</div>`)[0];
+                popup_741c3425595ab9aceed53c1e39e1bf2d.setContent(html_dc6c0378c6515a45dc030dac7cdc8edf);
             
         
 
-        marker_d89e427753078f7d61df12453900c1d2.bindPopup(popup_d10c27bce323404fb0e7e32e55985926)
+        marker_60a16e85e0ee1887bce7ced5ba6de0af.bindPopup(popup_741c3425595ab9aceed53c1e39e1bf2d)
         ;
 
         
     
     
-                marker_d89e427753078f7d61df12453900c1d2.setIcon(icon_ebf8724287b314e4c1983dc84fe7b2e4);
+                marker_60a16e85e0ee1887bce7ced5ba6de0af.setIcon(icon_fe72b7603f9673e28bd49e483915d9c9);
             
     
-            feature_group_080f49cf8343c6114bb839c52ff5742b.addTo(map_bf6d0603e62741b40ffdab7e80facd81);
+            feature_group_a252b40c3cba08a502d9a095ca2320cc.addTo(map_3fe0772c9e7d121ead4fabff7fd2afb5);
         
 </script>
 </html>

@@ -1,5 +1,5 @@
 import folium as fol
-map = fol.Map(location=[37.55043934921041, 126.99701154232895], zoom_start=12, TileLayer="Mapbox Bright")
+map = fol.Map(location=[37.55043934921041, 126.99701154232895], zoom_start=12  , tiles="CartoDB positron")
 
 fg = fol.FeatureGroup(name="My Map")
 
