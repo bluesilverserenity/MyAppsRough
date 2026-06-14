@@ -6,11 +6,19 @@ lat = list(df["LAT"])
 lon = list(df["LON"])
 elev = list(df["ELEV"])
 
+def color_marker(elev):
+    if elev < 1000:
+        return "green"
+    elif 1000 <= elev < 3000:
+        return "orange"
+    else:
+        return "red"
+    
 map = fol.Map(location=[48.776798, -121.810997], zoom_start=6, tiles="OpenStreetMap")
 
 fg = fol.FeatureGroup(name="Volcanoes Map")
 for i, j, k in zip(lat, lon, elev):
-    fg.add_child(fol.Marker(location=[i, j], popup=str(k)+" m", icon=fol.Icon(color="red")))
+    fg.add_child(fol.Marker(location=[i, j], popup=str(k)+" m", icon=fol.Icon(color=color_marker(k))))
 
 map.add_child(fg)
 map.save("volmap.html")
