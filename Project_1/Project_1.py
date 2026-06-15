@@ -18,7 +18,8 @@ def translate(word):
         # if user denies, tell them the word does not exist
         elif ans == "N":
             return "Word does not exist. Please double check it."
-        else:            return "We didn't understand your entry."
+        else:            
+            return "We didn't understand your entry."
     else:
         return "Word not found."
 
