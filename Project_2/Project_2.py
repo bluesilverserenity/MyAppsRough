@@ -17,10 +17,15 @@ def color_marker(elev):
 map = fol.Map(location=[48.776798, -121.810997], zoom_start=6, tiles="OpenStreetMap")
 
 fg = fol.FeatureGroup(name="Volcanoes Map")
+
 for i, j, k in zip(lat, lon, elev):
     fg.add_child(fol.Marker(location=[i, j], popup=str(k)+" m", icon=fol.Icon(color=color_marker(k))))
 
-fg.add_child(fol.GeoJson(data=open("world.json", "r", encoding="utf-8-sig").read(), style_function=lambda x: {"fillColor": "green" if x["properties"]["POP2005"] < 10000000 else "orange" if 10000000 <= x["properties"]["POP2005"] < 20000000 else "red"}))
+fg2 = fol.FeatureGroup(name="Population Map")
+
+fg2.add_child(fol.GeoJson(data=open("world.json", "r", encoding="utf-8-sig").read(), style_function=lambda x: {"fillColor": "green" if x["properties"]["POP2005"] < 10000000 else "orange" if 10000000 <= x["properties"]["POP2005"] < 20000000 else "red"}))
 
 map.add_child(fg)
+map.add_child(fg2)
+map.add_child(fol.LayerControl()) 
 map.save("volmap.html")
